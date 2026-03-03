@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let users = [
+        {name: 'vasya', age: 31, status: false},
+
+    {name: 'petya', age: 30, status: true},
+
+    {name: 'kolya', age: 29, status: true},
+
+    {name: 'olya', age: 28, status: false},
+
+    {name: 'max', age: 30, status: true},
+
+    {name: 'anya', age: 31, status: false},
+
+    {name: 'oleg', age: 28, status: false},
+
+    {name: 'andrey', age: 29, status: true},
+
+    {name: 'masha', age: 30, status: true},
+
+    {name: 'olya', age: 31, status: false},
+
+    {name: 'max', age: 31, status: true}
+
+    ];
+    let falseUsers=[]; f=0;
+    let trueUsers=[]; t=0;
+    let thirty_plusUsers=[]; th=0;
+
+    for (let i=0; i<users.length; i++){
+        if (users[i].age>=30){
+            thirty_plusUsers[th]=users[i];
+            th++;
+
+        }
+        else if(users[i].status === true){
+            trueUsers[t]=users[i];
+            t++;
+
+        }
+        else if (users[i].status === false) {
+            falseUsers[f]=users[i];
+            f++;
+
+        }
+    }
+
+    console.log('True users: ', trueUsers, '\nFalse users: ', falseUsers,'\n30+ users: ', thirty_plusUsers);
+//АБO
+    document.write('<h2>True users:</h2>');
+    for (let i=0; i<t; i++) {
+        document.write(`${trueUsers[i].name}, Status: ${trueUsers[i].status}<br>`);
+    }
+    document.write('<h2>False users: </h2>');
+    for (let i=0; i<f; i++) {
+        document.write(`${falseUsers[i].name}, Status:  ${falseUsers[i].status}<br>`);
+    }
+
+    document.write('<h2>30+ users: </h2>');
+    for (let i=0; i<th; i++) {
+        document.write(`${thirty_plusUsers[i].name}, Age: ${thirty_plusUsers[i].age}<br>`);
+    }
+</script>
+</body>
+</html>
