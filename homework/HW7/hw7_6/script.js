@@ -31,14 +31,14 @@ function Car(model, producer, year, maxSpeed, engineSize){
 }
 
 
-let car1=new Car('Porsche', 'Germany', '2026', 306, 4 )
+let car1=new Car('Porsche', 'Germany', '1996', 225, 4 )
 car1.info();
 
-car1.addDriver('Leon')
+car1.addDriver('Driver')
 console.log(car1);
 
 car1.increaseMaxSpeed(15)
 car1.drive()
 
-car1.changeYear(2027)
+car1.changeYear(2025)
 console.log(car1);
