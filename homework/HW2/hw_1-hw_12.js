@@ -5,7 +5,7 @@ let arr=[123,15.05,'hello world',anny={status:"okay"},[1,2,3],23,11,'27','apple'
 console.log(arr);
 
 //HW2 - #LARqoUj5I
-//Створити 3 об’єкти які описують книги. Поля об’єкту : title ,pageCount, genre.
+//Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 console.log('------HW2----------');
 let book1 = {title: 'Hobbit',pageCount: '300',genre: 'fantasy'}
 let book2 = {title: 'Witcher - Last Wish',pageCount: '200',genre: 'fantasy'}
@@ -14,7 +14,7 @@ console.log (book1,'\n',book2,'\n',book3)
 
 
 //HW3 - #sA3Gg1sCp
-//Створити 3 об’єкти, які описують книги. Поля об’єкту : title ,pageCount, genre, authors. Поле “автори” – являється  масивом. Кожен автор має поля name та age.
+//Створити 3 об'єкти, які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле “автори” – являється  масивом. Кожен автор має поля name та age.
 console.log('------HW3----------');
 book1.authors={name: 'J. R. R. Tolkien',age: 81};
 book2.authors={name:'Andrzej Sapkowski',age: 77};
@@ -22,7 +22,7 @@ book3.authors={name: 'Illarion Pavliuk',age: 45};
 console.log (book1,'\n',book2,'\n',book3)
 
 //HW4 - #jCHFnEbdmFd
-// Створити масив з 10 об’єктами, які описують сутніть “користувач”. Поля: name, username,password. Вивести в консоль пароль кожного користувача
+// Створити масив з 10 об'єктами, які описують сутніть “користувач”. Поля: name, username,password. Вивести в консоль пароль кожного користувача
 console.log('------HW4----------');
 let users=[
     {name: 'name1', username: 'user1', password: '213123123'},
@@ -55,7 +55,7 @@ temp=[
 ]
 console.log(temp);
 
-//HW6 - Є змінна х, якій ви надаєте довільне числове значення. Якщо змінна x не дорівнює нулю, виведіть ‘Вірно’, інакше виведіть ‘Невірно’.
+//HW6 - Є змінна х, якій ви надаєте довільне числове значення. Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
 console.log('------HW6----------');
 let six_x=15;
 if (six_x!==0){
