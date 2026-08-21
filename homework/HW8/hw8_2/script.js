@@ -4,7 +4,8 @@ let course =
         monthDuration: 5,
         hello: function(){
             return console.log('hello')
-}} ;
+}
+    } ;
 
 console.log(course)
 
@@ -21,15 +22,14 @@ courseCopy?.title;
 courseCopy.month?.startMonth;
 
 //functions
+let keys = Object.keys(course);
+let newCopy={};
 
-//в лекції говорилось, що створити глибоку копію із збереженням функцій неможливо, тому не до кінця розумію, як виконати це завдання, хіба що
-// створити поверхневу копію,власноруч додавати функцію, або зробити її глобальною і додавати до будь-яких обʼєктів?
-
-courseCopyTwo = Object.assign({}, course);
-console.log(courseCopyTwo)
-console.log('--------------')
-function hello () {
-    console.log('hello');
+for (let i = 0; i<keys.length;i++){
+    let key = keys[i];
+    newCopy[key] = course[key];
+    console.log(course[key]);
 }
-courseCopy.hello=hello;
-console.log(courseCopy)
+
+console.log('--------------')
+console.log(newCopy)
