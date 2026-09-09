@@ -11,5 +11,5 @@ div.style.height = '100px';
 
 document.body.appendChild(div);
 
-const cloneNode= div.cloneNode(true);
+const cloneNode= div.cloneNode(true)
 document.body.append(cloneNode);
